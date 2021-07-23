@@ -12,7 +12,7 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh
 #exec --no-startup-id exec nitrogen --restore
 exec --no-startup-id exec wal -R
 
-exec_always --no-startup-id exec picom --backend glx --round-borders 1 --corner-radius 10 --blur-background-fixed --blur-method dual_kawase --blur-strength 15 -i 0.9 -f -D 5 --inactive-dim 0.1 --active-opacity 0.9
+exec_always --no-startup-id exec picom --backend glx --round-borders 1 --corner-radius 7 --blur-background-fixed --blur-method dual_kawase --blur-strength 15 -i 0.9 -f -D 5 --inactive-dim 0.3 --active-opacity 0.95
 # -c for shadows
 
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
@@ -24,17 +24,17 @@ set $mod Mod4
 font pango:monospace 0
 
 #Set colours from Xresources
-
-set_from_resource $fg i3wm.color7
-set_from_resource $bg i3wm.color2
-
-client.focused          $bg     $bg     $fg     $bg     $bg
-client.focused_inactive          $bg     $bg     $fg     $bg     $bg
-client.unfocused          $bg     $bg     $fg     $bg     $bg
-client.urgent          $bg     $bg     $fg     $bg     $bg
-client.placeholder          $bg     $bg     $fg     $bg     $bg
-
-client.background       $bg
+#
+#set_from_resource $fg i3wm.color7
+#set_from_resource $bg i3wm.color2
+#
+#client.focused          $bg     $bg     $fg     $bg     $bg
+#client.focused_inactive          $bg     $bg     $fg     $bg     $bg
+#client.unfocused          $bg     $bg     $fg     $bg     $bg
+#client.urgent          $bg     $bg     $fg     $bg     $bg
+#client.placeholder          $bg     $bg     $fg     $bg     $bg
+#
+#client.background       $bg
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -74,7 +74,7 @@ bindsym $mod+Return exec alacritty
 bindsym $mod+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+space exec --no-startup-id rofi -show drun -theme slate
+bindsym $mod+space exec --no-startup-id rofi -show drun -theme slate -markup
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a

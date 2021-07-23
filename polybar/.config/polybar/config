@@ -115,7 +115,7 @@ label-padding = 2
 type = internal/i3
 format = <label-state> <label-mode>
 format-padding = 5
-format-background = ${colors.color1}
+format-background = #ff
 format-foreground = ${colors.background}
 index-sort = true
 wrapping-scroll = false
@@ -125,13 +125,13 @@ reverse-scroll = false
 
 label-focused = 
 label-focused-font = 0.5
-label-focused-foreground = ${colors.color3}
+label-focused-foreground = ${colors.color2}
 label-focused-padding = 1
 
 label-unfocused = 
 label-unfocused-font = 0.5
 label-unfocused-padding = 1
-label-unfocused-foreground = ${colors.background}
+label-unfocused-foreground = #88ffffff
 
 label-urgent = 
 label-urgent-font = 1
