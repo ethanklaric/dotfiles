@@ -1,11 +1,11 @@
 * {
-  background-color: #0d1213;
-  border-color: #2e343f;
+  background-color: #091112;
+  border-color: #69755f;
   text-color: #f0dfe0;
   spacing: 0;
-  width: 40%;
-  height: 30%;
-  font: "JetBrainsMono Nerd Font 12";
+  width: 20%;
+  height: 40%;
+  font: "JetBrainsMono Nerd Font 10";
 }
 
 inputbar {
@@ -33,14 +33,15 @@ listview {
   cycle: false;
   margin: 0 0 -1px 0;
   scrollbar: false;
-  columns: 2;
+  columns: 1;
 }
 
 element {
-  border: 0 0 1px 0;
+  border: 0 0 0px 0;
   padding: 16px;
 }
 
 element selected {
   background-color: #1d2223;
+  text-color: #69755f;
 }
