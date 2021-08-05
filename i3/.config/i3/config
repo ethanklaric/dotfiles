@@ -14,7 +14,7 @@ exec --no-startup-id exec wal -R
 exec_always unclutter
 exec_always --no-startup-id redshift -l -37:144
 
-exec picom --config ~/.config/picom.conf
+exec_always picom --config /home/ethan/.config/picom.conf
 #exec_always --no-startup-id exec picom --backend glx --round-borders 1 --corner-radius 7 --blur-background-fixed --blur-method dual_kawase --blur-strength 15 -i 0.9 -f -D 5 --inactive-dim 0.3 --active-opacity 0.95
 # -c for shadows
 
